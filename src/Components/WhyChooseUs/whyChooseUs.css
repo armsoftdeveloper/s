@@ -1,0 +1,71 @@
+.why-section {
+    background-image: url("../../assets/chooseUs.png");
+    background-color: #000913;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 60px 20px 120px 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+}
+
+.why-title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.why-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #73CAA9;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-card {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 30px 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.why-card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.why-icon {
+    font-size: 2rem;
+    color: #4ECDA7;
+    margin-bottom: 20px;
+}
+
+.why-heading {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.why-desc {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}

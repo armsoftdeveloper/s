@@ -1,0 +1,111 @@
+.actions-section {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    padding: 100px 20px;
+    background-color: #0B0F1A;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.actions-overlay {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.actions-title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.action-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px 20px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.action-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 30px rgba(78, 205, 167, 0.3);
+}
+
+.action-icon {
+    font-size: 2rem;
+    color: #4ecda7;
+    margin-bottom: 20px;
+}
+
+.actions-title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.actions-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+.action-title {
+    font-size: 16px;
+}
+
+.action-desc {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .actions-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .action-desc {
+        max-width: 100%;
+    }
+
+    .action-icon {
+        font-size: 2.5rem;
+    }
+}

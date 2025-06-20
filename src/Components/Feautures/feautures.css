@@ -1,0 +1,92 @@
+.features-section {
+    background: #000913;
+    padding: 80px 20px;
+    color: #eee;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    background-image: url("../../assets/feautures-background.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.features-title {
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: start;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Manrope", sans-serif;
+}
+
+.feature-card {
+    background: #010b17;
+    border-radius: 16px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: "Manrope", sans-serif;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.feature-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px #4ecda7);
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    text-shadow: 0 0 5px rgba(78, 205, 167, 0.8);
+    font-family: "Manrope", sans-serif;
+}
+
+.feature-desc {
+    font-size: 12px;
+    color: #b0c9ca;
+    line-height: 1.5;
+    max-width: 280px;
+    font-family: "Manrope", sans-serif;
+    margin: 0px;
+}
+
+.features-section .char {
+    display: inline-block;
+    transform-origin: bottom;
+}
+
+@media (max-width: 600px) {
+    .features-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .feature-desc {
+        max-width: 100%;
+    }
+}
